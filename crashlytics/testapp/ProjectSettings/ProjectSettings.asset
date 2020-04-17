@@ -165,7 +165,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.google.firebase.unity.crashlytics.testapp
     Standalone: unity.Google.Crashlytics for Firebase Unity Testapp
-    iPhone: com.google.firebase.unity.crashlytics.testapp
+    iPhone: com.gamebreaking.quickstartunitygame
     tvOS: com.google.firebase.unity.crashlytics.testapp
   buildNumber:
     iPhone: 0

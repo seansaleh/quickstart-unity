@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>537263220100-brqlus0d3177q04il80ro8fddo12j3h7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.537263220100-brqlus0d3177q04il80ro8fddo12j3h7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAmgxd1C9u5W2bSUCeIbP-9mxwyxEUO6PM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>537263220100</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.gamebreaking.quickstartunitygame</string>
+	<key>PROJECT_ID</key>
+	<string>gbs-test-project-2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gbs-test-project-2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:537263220100:ios:53dc3c4f83bca51de669d1</string>
+	<key>DATABASE_URL</key>
+	<string>https://gbs-test-project-2.firebaseio.com</string>
+</dict>
+</plist>
