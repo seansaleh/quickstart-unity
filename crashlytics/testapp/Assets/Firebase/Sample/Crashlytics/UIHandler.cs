@@ -13,9 +13,9 @@
 // limitations under the License.
 
 namespace Firebase.Sample.Crashlytics {
-  using Firebase;
-  using Firebase.Crashlytics;
-  using Firebase.Extensions;
+  //using Firebase;
+  //using Firebase.Crashlytics;
+  //using Firebase.Extensions;
   using System;
   using UnityEngine;
 
@@ -29,22 +29,22 @@ namespace Firebase.Sample.Crashlytics {
     bool UIEnabled = true;
     private string logText = "";
     const int kMaxLogSize = 16382;
-    DependencyStatus dependencyStatus = DependencyStatus.UnavailableOther;
+    //DependencyStatus dependencyStatus = DependencyStatus.UnavailableOther;
     protected bool firebaseInitialized = false;
 
     // When the app starts, check to make sure that we have
     // the required dependencies to use Firebase, and if not,
     // add them if possible.
     public virtual void Start() {
-      FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
-        dependencyStatus = task.Result;
-        if (dependencyStatus == DependencyStatus.Available) {
-          InitializeFirebase();
-        } else {
-          Debug.LogError(
-            "Could not resolve all Firebase dependencies: " + dependencyStatus);
-        }
-      });
+      //FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
+      //  dependencyStatus = task.Result;
+      //  if (dependencyStatus == DependencyStatus.Available) {
+      //    InitializeFirebase();
+      //  } else {
+      //    Debug.LogError(
+      //      "Could not resolve all Firebase dependencies: " + dependencyStatus);
+      //  }
+      //});
     }
 
     // Exit if escape (or back, on mobile) is pressed.
@@ -56,7 +56,7 @@ namespace Firebase.Sample.Crashlytics {
 
     // Handle initialization of the necessary firebase modules:
     void InitializeFirebase() {
-      var app = FirebaseApp.DefaultInstance;
+      //var app = FirebaseApp.DefaultInstance;
       firebaseInitialized = true;
     }
 
@@ -76,27 +76,27 @@ namespace Firebase.Sample.Crashlytics {
       {
           throw new InvalidOperationException("This exception should be caught");
       } catch (Exception ex) {
-          Crashlytics.LogException(ex);
+          //Crashlytics.LogException(ex);
       }
     }
 
     // Write to the Crashlytics session log
     public void WriteCustomLog(String s) {
       DebugLog("Logging message to Crashlytics session: " + s);
-      Crashlytics.Log(s);
+      //Crashlytics.Log(s);
     }
 
     // Add custom key / value pair to Crashlytics session
     public void SetCustomKey(String key, String value) {
       DebugLog("Setting Crashlytics Custom Key: <" + key + " / " + value + ">");
-      Crashlytics.SetCustomKey(key, value);
+      //Crashlytics.SetCustomKey(key, value);
     }
 
     // Set User Identifier for this Crashlytics session 
     public void SetUserID(String id)
     {
       DebugLog("Setting Crashlytics user identifier: " + id);
-      Crashlytics.SetUserId(id);
+      //Crashlytics.SetUserId(id);
     }
 
     // Output text to the debug log text field, as well as the console.
@@ -177,11 +177,11 @@ namespace Firebase.Sample.Crashlytics {
     // Render the GUI:
     void OnGUI() {
       GUI.skin = fb_GUISkin;
-      if (dependencyStatus != DependencyStatus.Available) {
-          GUILayout.Label("One or more Firebase dependencies are not present.");
-          GUILayout.Label("Current dependency status: " + dependencyStatus.ToString());
-          return;
-      }
+      //if (dependencyStatus != DependencyStatus.Available) {
+      //    GUILayout.Label("One or more Firebase dependencies are not present.");
+      //    GUILayout.Label("Current dependency status: " + dependencyStatus.ToString());
+      //    return;
+      //}
       Rect logArea, controlArea;
 
       if (Screen.width < Screen.height) {
