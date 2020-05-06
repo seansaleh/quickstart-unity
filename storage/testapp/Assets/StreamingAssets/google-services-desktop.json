@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "537263220100",
+    "firebase_url": "https://gbs-test-project-2.firebaseio.com",
+    "project_id": "gbs-test-project-2",
+    "storage_bucket": "gbs-test-project-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537263220100:ios:53dc3c4f83bca51de669d1",
+        "android_client_info": {
+          "package_name": "com.gamebreaking.quickstartunitygame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537263220100-brqlus0d3177q04il80ro8fddo12j3h7.apps.googleusercontent.com"
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmgxd1C9u5W2bSUCeIbP-9mxwyxEUO6PM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
